@@ -4,13 +4,13 @@ formRef.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
     event.preventDefault();
     const {
-        elements: { password, login }
+        elements: { password, password }
     } = event.currentTarget;
 
-    if (password.value === "" || login.value === "") {
+    if (password.value === "" || password.value === "") {
         return alert("всі поля повинні бути заповнені!");
     }
-    console.log(`Login: ${password.value}, Password: ${login.value}`);
+    console.log(`Login: ${password.value}, Password: ${password.value}`);
     event.currentTarget.reset();
 }
 
